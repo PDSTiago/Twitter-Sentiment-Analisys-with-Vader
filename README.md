@@ -1,4 +1,4 @@
-#Twitter Sentiment Analisys with Vader
+# Twitter Sentiment Analisys with Vader
 
 This repository contains a Twitter Sentiment Analisys using Vader. Basically I get the latest tweets according to the topic searched and language chosen and using the sentiment analysis algorithm: Vader, I can get the number of positive, neutral or negative tweets.
 
