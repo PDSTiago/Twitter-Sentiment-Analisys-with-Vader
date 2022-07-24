@@ -43,6 +43,6 @@ for text in cleanmsgs:
         good+=1
 
 print("Percentage of positive and neutral tweets:")
-print(int((bom/tam)*100), "%")
+print(int((good/tam)*100), "%")
 print("Percentage of negative tweets:")
-print(int((ruim/tam)*100), "%")
+print(int((bad/tam)*100), "%")
