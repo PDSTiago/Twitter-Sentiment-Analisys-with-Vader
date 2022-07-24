@@ -27,8 +27,8 @@ for text in msgs:
         continue
     cleanmsgs.append(tweet)
 
-bom = 0
-ruim = 0
+good = 0
+bad = 0
 
 tam = len(cleanmsgs)
 
@@ -38,11 +38,11 @@ for text in cleanmsgs:
     trad = GoogleTranslator(source="portuguese", target="english").translate(text)
     res = vader.polarity_scores(trad)
     if(res['compound']<=-0.05):
-        ruim+=1
+        bad+=1
     else:
-        bom+=1
+        good+=1
 
-print("Porcetagem de tweets positivos e neutros:")
+print("Percentage of positive and neutral tweets:")
 print(int((bom/tam)*100), "%")
-print("Porcetagem de tweets negativos:")
+print("Percentage of negative tweets:")
 print(int((ruim/tam)*100), "%")
