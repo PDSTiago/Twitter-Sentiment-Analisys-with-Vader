@@ -4,8 +4,8 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import string
 from deep_translator import GoogleTranslator
 
-auth = tweepy.OAuthHandler("your data", "your data")
-auth.set_access_token("your data", "your data")
+auth = tweepy.OAuthHandler("CONSUMER_KEY", "CONSUMER_SECRET")
+auth.set_access_token("ACCESS_TOKEN", "ACCESS_TOKEN_SECRET")
 api = tweepy.API(auth)
 
 msgs = []
